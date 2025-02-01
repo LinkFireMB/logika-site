@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ігровий магазин</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Ігровий магазин</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Пошук ігор..." id="search">
+            <button>Пошук</button>
+        </div>
+        <div class="header-actions">
+            <a href="#" class="cart">🛒 Кошик (0)</a>
+            <a href="#" class="login">Увійти</a>
+            <button id="language-toggle">RU/UA</button>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Головна</a>
+        <a href="#">Популярні</a>
+        <a href="#">Категорії</a>
+        <a href="#">Новинки</a>
+        <a href="#">Безкоштовні</a>
+    </nav>
+
+    <!-- Рекомендовані ігри -->
+    <section class="recommendations">
+        <h2>Рекомендації для вас</h2>
+        <div class="slider">
+            <div class="game-card">
+                <img src="https://upload.wikimedia.org/wikipedia/ru/a/a2/The_Witcher_3-_Wild_Hunt_Cover.jpg" alt="The Witcher 3">
+                <p><strong>The Witcher 3</strong></p>
+                <div class="game-price">799 грн</div>
+                <button class="buy-button">Купити</button>
+            </div>
+            <div class="game-card">
+                <img src="https://upload.wikimedia.org/wikipedia/ru/0/03/Red_Dead_Redemption_2_coverart.jpg" alt="Red Dead Redemption 2">
+                <p><strong>Red Dead Redemption 2</strong></p>
+                <div class="game-price">999 грн</div>
+                <button class="buy-button">Купити</button>
+            </div>
+            <div class="game-card">
+                <img src="https://upload.wikimedia.org/wikipedia/ru/b/bb/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0_%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9_%D0%B8%D0%B3%D1%80%D1%8B_Cyberpunk_2077.jpg" alt="Cyberpunk 2077">
+                <p><strong>Cyberpunk 2077</strong></p>
+                <div class="game-price">899 грн</div>
+                <button class="buy-button">Купити</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Категорії -->
+    <section class="categories">
+        <h2>Категорії</h2>
+        <div class="category-wrapper">
+            <div class="category-list">
+                <button class="category-item">Екшн</button>
+                <button class="category-item">РПГ</button>
+                <button class="category-item">Пригоди</button>
+                <button class="category-item">Стратегії</button>
+                <button class="category-item">Головоломки</button>
+                <button class="category-item">ММО</button>
+                <button class="category-item">Симулятори</button>
+                <button class="category-item">Спортивні</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярні ігри -->
+    <section class="popular-games">
+        <h2>Популярні ігри</h2>
+        <div class="game-list">
+            <div class="game-item">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202312/0117/315718bce7eed62e3cf3fb02d61b81ff1782d6b6cf850fa4.png" alt="The Last of Us Part II">
+                <p><strong>The Last of Us Part II</strong></p>
+                <div class="game-price">799 грн</div>
+                <button class="buy-button">Купити</button>
+            </div>
+            <div class="game-item">
+                <img src="https://upload.wikimedia.org/wikipedia/ru/b/b6/Ghost_of_Tsushima.jpg" alt="Ghost of Tsushima">
+                <p><strong>Ghost of Tsushima</strong></p>
+                <div class="game-price">849 грн</div>
+                <button class="buy-button">Купити</button>
+            </div>
+            <div class="game-item">
+                <img src="https://upload.wikimedia.org/wikipedia/ru/7/77/Fallout_4_poster.jpg" alt="Fallout 4">
+                <p><strong>Fallout 4</strong></p>
+                <div class="game-price">399 грн</div>
+                <button class="buy-button">Купити</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Новинки -->
+    <section class="new-games">
+        <h2>Новинки</h2>
+        <div class="game-list">
+            <div class="game-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyJI_QwpeJIhZFd5iQhz8rlDoFGU8kxjHRCg&s" alt="S.T.A.L.K.E.R. 2">
+                <p><strong>S.T.A.L.K.E.R. 2</strong></p>
+                <div class="game-price">1399 грн</div>
+                <button class="buy-button">Купити</button>
+            </div>
+            <div class="game-item">
+                <img src="https://www.grandprix247.com/wp-content/uploads/2024/08/assetto-corsa-evo.jpg" alt="Assetto Corsa EVO">
+                <p><strong>Assetto Corsa EVO</strong></p>
+                <div class="game-price">897 грн</div>
+                <button class="buy-button">Купити</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Усі права захищені</p>
+    </footer>
+
+ <script>
+        const languageToggle = document.getElementById('language-toggle');
+        languageToggle.addEventListener('click', () => {
+            if (document.documentElement.lang === 'uk') {
+                document.documentElement.lang = 'ru';
+                document.querySelector('h1').innerText = 'Игровой магазин';
+                document.querySelector('.search-bar input').placeholder = 'Поиск игр...';
+                document.querySelector('.search-bar button').innerText = 'Поиск';
+                document.querySelector('.cart').innerText = '🛒 Корзина (0)';
+                document.querySelector('.login').innerText = 'Войти';
+                document.querySelector('nav a:nth-child(1)').innerText = 'Главная';
+                document.querySelector('nav a:nth-child(2)').innerText = 'Популярные';
+                document.querySelector('nav a:nth-child(3)').innerText = 'Категории';
+                document.querySelector('nav a:nth-child(4)').innerText = 'Новинки';
+                document.querySelector('nav a:nth-child(5)').innerText = 'Бесплатные';
+                document.querySelector('.recommendations h2').innerText = 'Рекомендации для вас';
+                document.querySelector('.categories h2').innerText = 'Категории';
+                document.querySelector('footer p').innerText = '© 2025 Все права защищены';
+            } else {
+                document.documentElement.lang = 'uk';
+                document.querySelector('h1').innerText = 'Ігровий магазин';
+                document.querySelector('.search-bar input').placeholder = 'Пошук ігор...';
+                document.querySelector('.search-bar button').innerText = 'Пошук';
+                document.querySelector('.cart').innerText = '🛒 Кошик (0)';
+                document.querySelector('.login').innerText = 'Увійти';
+                document.querySelector('nav a:nth-child(1)').innerText = 'Головна';
+                document.querySelector('nav a:nth-child(2)').innerText = 'Популярні';
+                document.querySelector('nav a:nth-child(3)').innerText = 'Категорії';
+                document.querySelector('nav a:nth-child(4)').innerText = 'Новинки';
+                document.querySelector('nav a:nth-child(5)').innerText = 'Безкоштовні';
+                document.querySelector('.recommendations h2').innerText = 'Рекомендації для вас';
+                document.querySelector('.categories h2').innerText = 'Категорії';
+                document.querySelector('footer p').innerText = '© 2025 Усі права захищені';
+            }
+        });
+    </script>
+    
+</body>
+</html>
